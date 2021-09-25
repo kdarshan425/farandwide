@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="styles/style.css">
     <link rel="icon" href="img/faw.png">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
@@ -198,15 +199,9 @@
     }
     </style>
 </head>
-<body onload="myFunction4()" style="margin:0;">
-    <div style="background-color: black;" id="loader">
-        <div style="height:100vh;width:100%">
-             <center>
-                <img class="loader-img" src="img/faw.png" alt="">
-             </center>
-        </div>
-    </div>
-    <div style="display:none;" id="myDiv">
+<body>
+    
+    <div>
         <nav style="background: black">       
             <div style="background-color: white;height:70px;" class="topnav" id="myTopnav">
                 <a href="index.html" style="padding: 10px 16px;float:left;font-weight: 900;font-family: 'Raleway', sans-serif;">
@@ -421,29 +416,26 @@
                     </div>
                 </center>      
             </footer>
-        </div>
-        <script>
-            AOS.init({
-                duration : 1000,
-            });
-
-            //loader
-  
-            function myFunction4() {
-            myVar = setTimeout(showPage, 0);
-            }
-
-            function showPage() {
-            document.getElementById("loader").style.display = "none";
-            document.getElementById("myDiv").style.display = "block";
-            }
-        </script>
-        
-        <script src="script.js"></script>
-        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-            
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
-    
+        </div>        
     </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration : 1000,
+        });
+
+        //loader
+
+        function myFunction4() {
+        myVar = setTimeout(showPage, 0);
+        }
+
+        function showPage() {
+        document.getElementById("loader").style.display = "none";
+        document.getElementById("myDiv").style.display = "block";
+        }
+    </script>        
+    <script src="script.js"></script>    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
     </body>
 </html>
